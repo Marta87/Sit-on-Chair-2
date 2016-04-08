@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-2.2.1.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+  <title>Sit on chair</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <p class="page_name">SIT <span>ON</span> CHAIR</p>
+      <div class="hamburger_menu"><img src="image/menu.png"></div>
+      <ul class="menu">
+        <li><a href="#">O FIRMIE</a>
+          <ul id="submenu">
+            <li><a href="#">Aktualności</a></li>
+            <li><a href="#">Nasz team</a></li>
+            <li><a href="#">Historia</a></li>
+          </ul>
+        </li>
+        <li class="galeria"><a href="#">GALERIA</a></li>
+        <li class="kontakt_header"><a href="#">KONTAKT</a></li>
+      </ul>
+    </div>
+  </header>
+  <! -- slider.scss -->
+  <section class="first_content">
+    <a href="#" class="arrowL">&lt;</a>
+    <div class="slider">
+      <ul>
+        <li class="chairs_picture"><img src="./image/black_chair.png"></li>
+        <li class="chairs_picture"><img src="./image/orange.png">
+        </li>
+        <li class="chairs_picture"><img src="./image/red.png">
+        </li>
+      </ul>
+    </div>
+    <div class="text_content">
+      <p class="text_content_p1">SIT <span>ON</span> OUR <span>CHAIR</span>
+        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+          <div class="button"><a href="#">ZOBACZ WIĘCEJ</a></div>
+    </div>
+    <a href="#" class="arrowG">&gt;</a>
+  </section>
+  <! -- second.scss -->
+  <section class="second_content">
+    <figure>
+      <img src="./image/box1_img.jpg">
+      <figcaption class="description_of_the_image ">Chair CLAIR<span class="emphasis"></span></figcaption>
+    </figure>
+    <figure>
+      <img src="./image/box2_img.jpg">
+      <figcaption class="description_of_the_image">Chair MARGARITA<span class="emphasis figure_2"></span></figcaption>
+    </figure>
+    <article class="object3">
+      <p id="object3_title">Finds all inputs</p>
+      <p class="emphasis"></p>
+      <p class="p_object3">Ta sama zasada działa także dla kolumn tabeli, jednak w dokumencie musi znaleźć się element, kolumnie. HTML wykorzystuje w tym celu tag</p>
+      <p class="p_object3">Tabela musi zaczynać się taką samą liczbą znaczników COL ile jest</p>
+    </article>
+  </section>
+  <! -- third.scss -->
+  <section class="third_content">
+    <div class="price">
+      <p>CENNIK</p>
+      <p class="emphasis"></p>
+    </div>
+    <div class="boxes">
+      <div class="box_size">
+        <p class="white_circle"></p>
+        <p class="gray_circle"></p>
+        <p class="plan">BASIC PLAN</p>
+        <div class="cost_circle">
+          <p class="cost">85<span class="value">99</span></p>
+          <p class="currency">PLN/MSC</p>
+        </div>
+        <div class="option">
+          <p>Zakup towaru + dowóz</p>
+        </div>
+        <div class="option2">
+          <p>Serwis</p>
+        </div>
+        <div id="pushbutton">
+          <p>DOŁĄCZ</p>
+        </div>
+      </div>
+      <div class="middle_box_size">
+        <p class="big_circle"></p>
+        <p class="small_circle"></p>
+        <p class="plan">STANDARD PLAN</p>
+        <div class="cost_circle">
+          <p class="cost">95<span class="value">99</span></p>
+          <p class="currency">PLN/MSC</p>
+        </div>
+        <div class="option">
+          <p>Zakup towaru + dowóz</p>
+        </div>
+        <div class="option2">
+          <p class="serwis_text">Serwis</p>
+        </div>
+        <div class="option">
+          <p>Gwarancja 5 lat</p>
+        </div>
+        <div id="dolacz_srodek" class="button">
+          <p id="dolacz_text_srodek" class="dolacz_text">DOŁĄCZ</p>
+        </div>
+      </div>
+      <div class="box_size">
+        <p class="white_circle"></p>
+        <p class="gray_circle"></p>
+        <p class="plan">ADVANCE PLAN</p>
+        <div class="cost_circle">
+          <p class="cost">211<sup><span class="value">00</span></sup></p>
+          <p class="currency">PLN/MSC</p>
+        </div>
+        <div class="option">
+          <p>Zakup towaru + dowóz</p>
+        </div>
+        <div class="option2">
+          <p>Serwis</p>
+        </div>
+        <div class="option">
+          <p>Gwarancja 6 lat</p>
+        </div>
+        <div class="option2">
+          <p>Porady projektanta</p>
+        </div>
+        <div class="button">
+          <p>DOŁĄCZ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="selection_form_chairs">
+    <p class="price">SKOMPONUJ SWOJE KRZESŁO</p>
+    <p class="emphasis"></p>
+    <div class="form">
+      <form>
+        <select name="chair_type" id="chair_type">
+          <option value="Wybierz model">Wybierz model</option>
+          <option value="299.99">Clair</option>
+          <option value="359.99" id="margarita">Margarita</option>
+          <option value="599.99" id="selena">Selena</option>
+        </select>
+        <select name="chair_color" id="chair_color">
+          <option value="0">Wybierz color</option>
+          <option value="1">Czerwony</option>
+          <option value="2">Biały</option>
+          <option value="3">Czarny</option>
+        </select>
+        <select name="chair_model" id="fabric">
+          <option value="0">Wybierz materiał</option>
+          <option value="1">Materiał</option>
+          <option value="2">Skóra</option>
+        </select>
+      </form>
+      <div class="trans checkbox">
+        <input type="checkbox" id="transport" value="200">
+        <label for="transport">Transport</label>
+      </div>
+      <img src="image/red.png" class="img_red_chair chair2">
+      <div class="summary">
+        <p>PODSUMOWANIE</p><span class="emphasis_summary"></span>
+      </div>
+      <table>
+        <thead>
+          <td class="line" id="chair_choice">Twój Fotel
+          </td>
+          <td id="price" class="numbers"></td>
+        </thead>
+        <tfoot>
+          <td>SUMA</td>
+          <td id="amount"></td>
+        </tfoot>
+        <tr>
+          <td id="chairColorTxt" class="line"></td>
+          <td id="price1" class="numbers"></td>
+        </tr>
+        <tr>
+          <td id="choice_fabrics" class="line"></td>
+          <td id="price2" class="numbers"></td>
+        </tr>
+        <tr id="pokaza">
+          <td id="transport_text" class="line">Transport</td>
+          <td id="transport_price" class="numbers">0</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section class="contact_form">
+    <p class="contact">KONTAKT</p>
+    <p class="emphasis"></p>
+    <div class="form">
+      <form>
+        <input class="pola" type="text" name="imie" placeholder="Imię">
+        <input class="pola" type="text" name="imie" placeholder="email">
+        <textarea cols="40" rows="6" placeholder="Wiadomość"></textarea>
+      </form>
+    </div>
+    <div class="red_chair">
+      <img src="image/red.png" class="img_red_chair">
+      <div class="checkbox">
+        <input type="checkbox" id="agree">
+        <label for="agree">
+          <p>Zgadzam się na przetwarzanie danych osobowych</p>
+        </label>
+      </div>
+    </div>
+    <div class="button">
+      <p>WYŚLIJ</p>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2014 | All Rights Reserved. -Sit On Chair</p>
+      <div class="social_media">
+        <a href="#"><img id="flickr" src="image/pobrane.png"></a>
+        <a href="#"><img id="vimeo" src="image/vimeo-icon.png"></a>
+        <a href="#"><img id="pinterest" src="image/pinterest.png"></a>
+        <a href="#"><img src="http://wisdomwayscenter.org/uploads/images/Social%20Media%20Icons/twitter.png" id="tweeter"></a>
+      </div>
+    </div>
+    <div class="contener_footter">
+      <p id="footter_sitOn">SIT<b>ON</b>CHAIR</p>
+    </div>
+  </section>
+</body>
+</html>

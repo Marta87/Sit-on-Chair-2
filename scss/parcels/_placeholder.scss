@@ -1,0 +1,133 @@
+%main-width {
+  margin: 0 auto;
+  max-width: 1060px;
+  width: 100%;
+}
+
+//Header
+%logo {
+  color: $logo_color;
+  font-weight: bold;
+}
+
+%arrow {
+  color: $logo_color;
+  font-size: 50px;
+  position: absolute;
+  top: 16%;
+  text-decoration: none
+}
+
+//Second_content
+%article {
+  margin: 0 auto;
+  width: 329px;
+  height: 250px;
+  padding-top: 50px;
+  display: inline-block;
+}
+
+%images_to_articles {
+  width: 329px;
+  margin: 0 auto;
+  //  padding-top: 50px;
+  display: block;
+}
+
+%description_of_the_image {
+  width: 329px;
+  height: 50px;
+  position: absolute;
+  padding-left: 15px;
+  margin-top: -60px;
+  background: rgba(255, 255, 255, .35);
+}
+
+%emphasis {
+  height: 6px;
+  width: 130px;
+  position: absolute;
+  background-color: rgb(39, 199, 171);
+}
+
+%big_circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: -29px;
+  border: 3px solid $small_circle_color;
+  border-radius: 50%;
+  background-color: $big_circle_color;
+}
+
+%small_circle {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: -44px;
+  border: 1px solid $big_circle_color;
+  border-radius: 50%;
+  background-color: $small_circle_color;
+}
+
+%box_size {
+  height: 480px;
+  width: 80%;
+  border: 2px solid rgba(128, 128, 128, .35);
+  margin: 40px 15px 0 15px;
+}
+
+%plan {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+%cost_circle {
+  height: 100px;
+  width: 100px;
+  margin: 20PX auto;
+  border-radius: 50%
+}
+
+%cost {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+%value {
+  font-size: 12px;
+  vertical-align: 7px;
+}
+
+%currency {
+  font-size: 12px;
+  text-align: center;
+  margin-top: -32px;
+  font-weight: bold;
+}
+
+%option_text {
+  margin: 0 auto;
+  color: rgba(128, 128, 128, .65);
+  padding-top: 5px;
+  text-align: center;
+  font-size: 22px;
+}
+
+%button {
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+%social_media {
+  display: inline-block;
+  float: left;
+  height: 30px;
+  margin-top: -70px;
+}

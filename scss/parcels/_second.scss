@@ -1,0 +1,94 @@
+.second_content {
+  @extend %main-width;
+  background: white;
+  height: 900px;
+  width: auto;
+  //margin: 0 auto;
+  text-align: center;
+  figure {
+    @extend %article;
+    text-align: left;
+    .description_of_the_image {
+      @extend %description_of_the_image;
+    }
+    @media(min-width: 750px) {
+      .description_of_the_image {
+        font-size: 20px;
+      }
+    }
+    .emphasis {
+      @extend %emphasis;
+      margin-left: -88px;
+      margin-top: 18px;
+    }
+    @media(min-width: 750px) {
+      .emphasis {
+        margin-top: 23px;
+        margin-left: -106px;
+      }
+    }
+    img {
+      @extend %images_to_articles;
+    }
+    @media (min-width: 750px) {
+      img {
+        width: 100%;
+      }
+    }
+    .figure_2 {
+      margin-left: -133px;
+    }
+    @media (min-width: 750px) {
+      .figure_2 {
+        margin-left: -166px;
+      }
+    }
+  }
+  @media (min-width: 750px) {
+    figure {
+      margin: 0 22px;
+    }
+  }
+}
+
+.object3 {
+  height: 250px;
+  @extend %article;
+  text-align: left;
+  border: 2px solid rgba(128, 128, 128, .25);
+  margin: 50px auto; //50px 0  0 41.5px;
+  padding: 5px;
+  .emphasis {
+    @extend %emphasis;
+    margin-top: -13px;
+  }
+}
+
+@media (min-width: 750px) {
+  .object3 {
+    margin: 50px 25px;
+  }
+}
+
+#object3_title {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 6px;
+}
+
+@media (min-width: 750px) {
+  .second_content {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .second_content {
+    height: 400px;
+    flex-wrap: nowrap;
+  }
+}

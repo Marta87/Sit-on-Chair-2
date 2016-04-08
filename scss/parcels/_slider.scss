@@ -1,0 +1,150 @@
+//slider
+.first_content {
+  @extend %main-width;
+  width: 100%;
+  background: linear-gradient(to top, #D3D2D9 0%, #FAFAFA 40%);
+  position: relative;
+  height: 550px;
+  margin: 0 auto;
+  .slider {
+    text-align: center;
+    ul {
+      display: block;
+      list-style: none;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+  }
+  .chairs_picture {
+    width: 250px;
+    height: 250px;
+    display: block;
+    padding: 16px 0;
+    display: none;
+    text-align: center;
+    img {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      width: 250px;
+      height: 250px;
+      margin-top: -125px;
+      margin-left: -125px;
+    }
+    @media (min-width: 700px) {
+      img {
+        margin-left: -290px;
+        margin-top: -60px;
+      }
+    }
+    @media (min-width: 800px) {
+      img {
+        margin-left: -380px;
+        margin-top: -90px;
+        width: 300px;
+        height: 300px;
+      }
+    }
+    @media (min-width: 900px) {
+      img {
+        margin-left: -440px;
+        margin-top: -90px;
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+  .slider .visible {
+    display: block;
+  }
+  .arrowL {
+    @extend %arrow;
+    left: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    z-index: 10;
+  }
+  @media (min-width: 480px) {
+    .arrowL {
+      padding-left: 110px;
+    }
+  }
+  @media (min-width: 650px) {
+    .arrowL {
+      padding-left: 160px;
+    }
+  }
+  @media (min-width: 700px) {
+    .arrowL {
+      padding-left: 30px;
+      padding-top: 75px;
+    }
+  }
+  .arrowG {
+    @extend %arrow;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+  }
+  @media (min-width: 480px) {
+    .arrowG {
+      padding-right: 110px;
+    }
+  }
+  @media (min-width: 650px) {
+    .arrowG {
+      padding-right: 160px;
+    }
+  }
+  @media (min-width: 700px) {
+    .arrowG {
+      padding-right: 30px;
+      padding-top: 75px;
+    }
+  }
+  .text_content {
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  @media (min-width: 700px) {
+    .text_content {
+      display: inline-block;
+      float: right;
+      width: 45%;
+      margin-top: -150px;
+      margin-right: 90px;
+    }
+  }
+  @media (min-width: 800px) {
+    .text_content {
+      width: 52%;
+    }
+  }
+  .text_content_p1 {
+    font-size: 30px;
+    span {
+      @extend %logo;
+    }
+  }
+  .button {
+    display: flex;
+    margin: 40px auto;
+    background-color: rgb(39, 199, 171);
+    border-radius: 10px;
+    color: white;
+    height: 50px;
+    width: 210px;
+    left: 50%;
+    padding: 15px 40px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

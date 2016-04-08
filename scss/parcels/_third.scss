@@ -1,0 +1,217 @@
+.third_content {
+  @extend %main-width;
+  height: 1800px;
+  background: white;
+  margin-top: -1px;
+  .price {
+    color: #000;
+    font-size: 18px;
+    padding-top: 40px;
+    margin-left: 30px;
+    .emphasis {
+      @extend %emphasis;
+      margin-top: -15px;
+      margin-left: 0px;
+    }
+  }
+  @media(min-width: 650px) {
+    .price {
+      font-size: 22px;
+    }
+  }
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .box_size {
+      @extend %box_size;
+      background-color: white;
+      .white_circle {
+        @extend %big_circle;
+      }
+      .gray_circle {
+        @extend %small_circle;
+      }
+      .plan {
+        @extend %plan;
+        color: $logo_color;
+      }
+      .cost_circle {
+        @extend %cost_circle;
+        border: 2px solid $small_circle_color;
+      }
+      .cost {
+        @extend %cost;
+        color: rgba(128, 128, 128, .45);
+      }
+      .value {
+        @extend %value;
+      }
+      .currency {
+        @extend %currency;
+        color: rgba(128, 128, 128, .45);
+      }
+      .option {
+        height: 40px;
+        background-color: rgb(228, 228, 228);
+        p {
+          @extend %option_text;
+        }
+      }
+      .option2 {
+        height: 40px;
+        background-color: rgb(241, 241, 241);
+        text-align: center;
+        font-size: 22px;
+        p {
+          @extend %option_text;
+        }
+      }
+      .gwarancja {
+        position: relative;
+        ;
+        top: 140px;
+        height: 40px;
+        background-color: white;
+        margin: 0 3px;
+      }
+      .gwarancja_text {
+        position: absolute;
+        top: -14px;
+        left: 12%;
+        color: rgba(128, 128, 128, .95);
+        margin: 20px 30px;
+        font-size: 22px;
+      }
+      .button {
+        @extend %button;
+        background-color: $logo_color;
+        margin: 50px auto;
+        color: white;
+        p {
+          padding: 4px 22px;
+        }
+      }
+    }
+    @media(min-width: 400px) {
+      .box_size {
+        width: 60%;
+      }
+    }
+    @media(min-width: 600px) {
+      .box_size {
+        width: 45%;
+      }
+    }
+    @media(min-width: 700px) {
+      .box_size {
+        width: 34%;
+      }
+    }
+    @media(min-width: 830px) {
+      .box_size {
+        width: 28%;
+      }
+    }
+  }
+  #pushbutton {
+    @extend %button;
+    background-color: $logo_color;
+    margin: 130px auto;
+    color: white;
+    p {
+      padding: 4px 22px;
+    }
+  }
+  .middle_box_size {
+    @extend %box_size;
+    background-color: $logo_color;
+    .big_circle {
+      @extend %big_circle;
+      background-color: $logo_color;
+      border-color: $logo_color;
+    }
+    .small_circle {
+      @extend %small_circle;
+      background: $big_circle_color;
+    }
+    .plan {
+      @extend %plan;
+      color: $big_circle_color;
+    }
+    .cost_circle {
+      @extend %cost_circle;
+      border: 2px solid $big_circle_color;
+      background: $big_circle_color;
+    }
+    .cost {
+      @extend %cost;
+      color: $logo_color;
+    }
+    .value {
+      @extend %value;
+    }
+    .currency {
+      @extend %currency;
+      color: $logo_color;
+    }
+    .option {
+      height: 40px;
+      background-color: $big_circle_color;
+      p {
+        @extend %option_text;
+      }
+    }
+    .option2 {
+      height: 40px;
+      background-color: rgb(241, 241, 241);
+      text-align: center;
+      font-size: 22px;
+      p {
+        @extend %option_text;
+      }
+    }
+    .button {
+      @extend %button;
+      background-color: $big_circle_color;
+      margin: 90px auto;
+      color: $logo_color;
+      p {
+        padding: 4px 22px;
+      }
+    }
+  }
+  @media(min-width: 400px) {
+    .middle_box_size {
+      width: 60%;
+    }
+  }
+  @media(min-width: 600px) {
+    .middle_box_size {
+      width: 45%;
+    }
+  }
+  @media(min-width: 700px) {
+    .middle_box_size {
+      width: 34%;
+    }
+  }
+  @media(min-width: 830px) {
+    .middle_box_size {
+      width: 28%;
+    }
+  }
+}
+
+@media(min-width: 600px) {
+  .third_content {
+    height: 1270px;
+  }
+}
+
+@media(min-width: 830px) {
+  .third_content {
+    height: 820px;
+  }
+}

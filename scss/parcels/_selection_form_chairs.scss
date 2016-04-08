@@ -1,0 +1,133 @@
+  .selection_form_chairs {
+    @extend %main-width;
+    height: 1600px;
+    background-color: rgb(249, 249, 249);
+    margin-top: -20px;
+    .price {
+      color: #000;
+      font-size: 18px;
+      padding-top: 40px;
+      margin-left: 30px;
+    }
+    .emphasis {
+      @extend %emphasis;
+      margin-top: -15px;
+      margin-left: 30px;
+      width: 200px;
+    }
+    .form {
+      width: 50%;
+      height: 400px;
+      margin: 40px auto;
+      box-sizing: border-box;
+      select {
+        height: 30px;
+        width: 150px;
+        margin: 5px auto;
+        border: 2px solid rgba(39, 199, 171, 0.20);
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        display: block;
+      }
+    }
+    .trans {
+      height: 30px;
+      width: 150px;
+      margin: 15px auto;
+      font-size: 15px;
+      font-family: 'Raleway', sans-serif;
+      display: block;
+    }
+    .img_red_chair {
+      float: left;
+      width: 200px;
+      height: 130px;
+      margin-left: -23px
+    }
+    *,
+    *:after,
+    *:before {
+      box-sizing: border-box;
+    }
+    .checkbox {
+      position: relative;
+      left: 50px;
+      top: 5px;
+    }
+    .checkbox input {
+      display: block;
+      opacity: 0;
+      height: 28px;
+      position: absolute;
+      width: 28px;
+    }
+    .checkbox label {
+      display: inline-block;
+      padding-left: 35px;
+      position: absolute;
+      right: 80px;
+      color: rgb(200, 200, 200);
+      font-size: 19px;
+    }
+    .checkbox label::before,
+    .checkbox label::after {
+      border: 2px solid rgba(39, 199, 171, 0.20);
+      content: "";
+      display: block;
+      left: 0;
+      height: 28px;
+      position: absolute;
+      width: 28px;
+      top: 0;
+    }
+    .checkbox label::after {
+      background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A') no-repeat center;
+      border: 0;
+      display: none;
+    }
+    .checkbox input:checked + label::after {
+      display: block;
+    }
+    .summary {
+      width: auto;
+      margin: 40px -90px;
+      p {
+        padding-top: 120px;
+      }
+    }
+    .emphasis_summary {
+      @extend %emphasis;
+      margin-top: -15px;
+      margin-left: 30px;
+      width: 140px;
+    }
+    table {
+      height: 50px;
+      width: 200px;
+      margin: 50px auto;
+      border-collapse: collapse;
+       td {
+      height: 30px;
+      width: 145px;
+    }
+      tfoot td {
+      border-top: 1px solid $logo_color;
+    }
+    .line {
+      border-right: 1px solid $logo_color;
+      height: 50px;
+      width: 145px;
+    }
+   
+    thead {
+      height: 30px;
+    }
+    .numbers {
+      text-align: right;
+    }
+    #suma {
+      text-align: right;
+    }
+    }
+    
+  }
