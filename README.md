@@ -8,10 +8,10 @@ My first website:
 
 -Active areas:
 
-*Slider (JS);
-
-*Disappearing avigation (JS);
-
-*Hamburger menu (Jquery);
-
-*Form (Jquery);
+  *Slider (JS);
+  
+  *Disappearing avigation (JS);
+  
+  *Hamburger menu (Jquery);
+  
+  *Form (Jquery);
