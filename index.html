@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery-2.2.1.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/app_jquery.js"></script>
   <title>Sit on chair</title>
 </head>
 <body>
@@ -143,25 +141,25 @@
     <div class="form">
       <form>
         <select name="chair_type" id="chair_type">
-          <option value="Wybierz model">Wybierz model</option>
-          <option value="299.99">Clair</option>
-          <option value="359.99" id="margarita">Margarita</option>
-          <option value="599.99" id="selena">Selena</option>
+          <option value="" data-name="" >Wybierz model</option>
+          <option value="299.99" data-name="Clair">Clair</option>
+          <option value="359.99" data-name="Margarita" id="margarita">Margarita</option>
+          <option value="599.99" data-name="Selena" id="selena">Selena</option>
         </select>
         <select name="chair_color" id="chair_color">
-          <option value="0">Wybierz color</option>
-          <option value="50">Czerwony</option>
-          <option value="70">Biały</option>
-          <option value="80">Czarny</option>
+          <option value="" data-name="">Wybierz color</option>
+          <option value="50" data-name="Czerwony">Czerwony</option>
+          <option value="70" data-name="Biały">Biały</option>
+          <option value="80" data-name="Czarny">Czarny</option>
         </select>
         <select name="chair_model" id="fabric">
-          <option value="0">Wybierz materiał</option>
-          <option value="300">Materiał</option>
-          <option value="500">Skóra</option>
+          <option value="" data-name="">Wybierz materiał</option>
+          <option value="300" data-name="Materiał">Materiał</option>
+          <option value="500" data-name="Skóra">Skóra</option>
         </select>
       </form>
       <div class="trans checkbox">
-        <input type="checkbox" id="transport" value="200">
+        <input type="checkbox" id="transport" value="200" data-name ="Transport">
         <label for="transport">Transport</label>
       </div>
       <img src="image/red.png" class="img_red_chair chair2">
